@@ -1,0 +1,14 @@
+name: Call Multi-Tofu Workflow
+
+on:
+  push:
+
+permissions:
+  id-token: write
+  contents: write
+  actions: write
+
+jobs:
+  call-multi-tofu:
+    uses: evoteum/estate-reusable-workflows/.github/workflows/multi-tofu.yml@main
+    secrets: inherit

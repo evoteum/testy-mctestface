@@ -52,7 +52,7 @@ jobs:
     - name: Initialize OpenTofu
       id: tofu-init
       run: |
-        cd tofu
+        cd tofu/test
         tofu init \
           -input=false \
           -backend-config="bucket=${{ secrets.TOFU_STATE_BUCKET_NAME }}" \
@@ -62,14 +62,14 @@ jobs:
     - name: Build OpenTofu Plan
       id: tofu-plan
       run: |
-        cd tofu
+        cd tofu/test
         set -o pipefail
         tofu plan -input=false -out=tfplan | tee plan.txt
 
     - name: Check OpenTofu Plan
       id: tofu-check-plan
       run: |
-        cd tofu
+        cd tofu/test
         tofu show -json tfplan > tfplan.json
         if grep -q "No changes." plan.txt; then
           echo "changes=false" >> $GITHUB_OUTPUT
@@ -82,6 +82,6 @@ jobs:
     - name: Apply OpenTofu configuration
       if: steps.tofu-check-plan.outputs.changes == 'true'
       run: |
-        cd tofu
+        cd tofu/test
         echo "Applying OpenTofu configuration"
         tofu apply tfplan

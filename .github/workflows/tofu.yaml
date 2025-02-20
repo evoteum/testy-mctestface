@@ -1,9 +1,7 @@
 name: Call Multi-Tofu Workflow
 
 on:
-  push:
-  workflow_dispatch:
-
+  never:
 
 permissions:
   id-token: write

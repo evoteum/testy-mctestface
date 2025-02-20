@@ -32,7 +32,7 @@ provider "github" {
   app_auth {} # Using `GITHUB_APP_XXX` environment variables in CI
 }
 
-resource "null_resource" "hello_world" {
+resource "null_resource" "hello_worlde" {
   provisioner "local-exec" {
     command = "echo e, ${var.environment}!"
   }

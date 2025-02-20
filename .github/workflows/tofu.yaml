@@ -1,4 +1,4 @@
-name: Call Multi-Tofu Workflow
+name: deploy_tofu
 
 on:
   push:

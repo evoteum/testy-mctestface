@@ -34,6 +34,6 @@ provider "github" {
 
 resource "null_resource" "hello_world" {
   provisioner "local-exec" {
-    command = "echo hieee, ${var.environment}!"
+    command = "echo hieeee, ${var.environment}!"
   }
 }

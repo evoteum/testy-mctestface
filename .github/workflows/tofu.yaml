@@ -14,3 +14,5 @@ jobs:
   deploy-multi-tofu:
     uses: evoteum/estate-reusable-workflows/.github/workflows/multi-tofu.yml@main
     secrets: inherit
+    with:
+      fail-fast: false

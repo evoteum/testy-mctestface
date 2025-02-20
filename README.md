@@ -35,7 +35,7 @@ This is a test repo
 [//]: # (Must not have its own title)
 [//]: # (A detailed description of the repo)
 
-
+Just a test repo.
 
 The configuration of this repo is managed by OpenTofu in [estate-repos](https://github.com/evoteum/estate-repos).
 

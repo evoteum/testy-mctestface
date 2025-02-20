@@ -1,12 +1,6 @@
 name: apply_tofu
 
 on:
-  push:
-    paths:
-      - "tofu/**"
-      - repos.yaml
-    branches:
-      - main
   workflow_dispatch:
 
 permissions:

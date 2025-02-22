@@ -16,4 +16,4 @@ jobs:
     secrets: inherit
     with:
       fail-fast: false
-      environment-directories: development,test
+      environment-directories: tofu/development,tofu/test

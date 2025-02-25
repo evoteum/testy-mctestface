@@ -37,3 +37,10 @@ resource "null_resource" "hello_worlde3" {
     command = "echo eeesseedf, ${var.environment}!"
   }
 }
+
+module "quay_repository" {
+  source   = "github.com/evoteum/tofu-modules.git//quay/repo"
+  repo_name = var.repo_name
+  organization = var.org_name
+  description = "Test repository"
+}

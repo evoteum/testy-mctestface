@@ -20,9 +20,3 @@ variable "environment" {
   description = "env name"
     type        = string
 }
-
-variable "org_name" {
-    type        = string
-    description = "The name of the organisation."
-    sensitive   = false
-}

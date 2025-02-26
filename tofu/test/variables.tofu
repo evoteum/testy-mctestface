@@ -18,5 +18,5 @@ variable "repo_name" {
 
 variable "environment" {
   description = "env name"
-    type        = string
+  type        = string
 }

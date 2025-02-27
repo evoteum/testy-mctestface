@@ -48,5 +48,5 @@ module "quay_repository" {
   source       = "github.com/evoteum/tofu-modules.git//quay/repo"
   name         = var.repo_name
   organisation = var.org_name
-  description  = "Testy McTestface repository"
+  description  = "TestyMcTestface repository"
 }

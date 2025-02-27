@@ -47,6 +47,6 @@ resource "null_resource" "hello_worlde3" {
 module "quay_repository" {
   source       = "github.com/evoteum/tofu-modules.git//quay/repo"
   name         = var.repo_name
-  organization = var.org_name
+  organisation = var.org_name
   description  = "Testy McTestface repository"
 }

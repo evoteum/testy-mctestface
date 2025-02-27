@@ -12,6 +12,9 @@ terraform {
       source  = "integrations/github"
       version = "5.45.0"
     }
+    quay = {
+      source = "registry.terraform.io/enthought/quay"
+    }
   }
   required_version = "1.9.0"
   backend "s3" {

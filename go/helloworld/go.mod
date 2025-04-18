@@ -1,3 +1,3 @@
-module github.com/evoteum/test-app
+module github.com/evoteum/testy-mctestface
 
 go 1.21

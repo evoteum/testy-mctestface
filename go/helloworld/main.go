@@ -6,7 +6,7 @@ import (
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Hello, Go! 🎉")
+	fmt.Fprintln(w, "Yo, Go! 🎉")
 }
 
 func main() {

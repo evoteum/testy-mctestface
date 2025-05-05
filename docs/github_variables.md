@@ -48,14 +48,12 @@ If a repository variable and an organisation variable share the same name, the r
 
 
 ### Variables
-- `ARTEFACT_TYPE`
-- `FAIL_FAST`
-- `LANGUAGE`
-- `LANGUAGE_VERSION`
-- `QUAY_REPOSITORY_PATH`
-- `QUAY_REPOSITORY_URL`
+- `REPOSITORY_DESCRIPTION`
+- `REPOSITORY_FAIL_FAST`
 - `REPOSITORY_ID`
-- `SOURCE_PATH`
+- `REPOSITORY_LANGUAGE`
+- `REPOSITORY_LANGUAGE_VERSION`
+- `REPOSITORY_SOURCE_PATH`
 
 
 ---
